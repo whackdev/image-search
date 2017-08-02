@@ -1,17 +1,5 @@
 const mongodb = require('mongodb').MongoClient;
 
-export function mongoConnect() {
-	mongodb.connect('mongodb://localhost:27017/img-search-db', (err, db) => {
-		if (err) {
-			console.log('DB connection failed', err);
-		}
-		if (db) {
-			console.log('DB connection successful');
-			db.close();
-		}
-	});
-}
-
 export function inputQuery(query) {
 	let timestamp = new Date().toUTCString();
 	
