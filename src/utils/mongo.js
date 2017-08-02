@@ -33,7 +33,7 @@ export function getQueries(req, res) {
 		queries.find({ }, {_id: 0, term: 1, when: 1}).toArray((err, docs) => {
 			if (err) throw err;
 
-			if (docs === '[]') {
+			if (docs !== '[]') {
 				res.status(200).json(docs);
 			} else {
 				res.status(500).json({ "error": "There are no queries in the database" });
