@@ -6,7 +6,7 @@ const path = require('path');
 const mongo = require('mongodb').MongoClient;
 
 import { imgSearch } from './utils/cse';
-import { mongoConnect } from './utils/mongo';
+import { mongoConnect, getQueries } from './utils/mongo';
 //import { } from './utils/query';
 
 export const app = express();
@@ -19,8 +19,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/imagesearch/:query', (req, res) => {
-	let query = req.params.query;
-	console.log(query)
-	imgSearch(query);
-	res.json({ "results": "API results" });
+	imgSearch(req.params.query);
+	
+	res.status(200).json({ "results": "API results" });
+});
+
+app.get('/api/latest/imagesearch', (req, res) => {
+	getQueries(req, res);
 });
