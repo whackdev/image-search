@@ -14,12 +14,6 @@ const db = require('./database/db');
 export const app = express();
 
 /**
- * View engine
- */
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
-
-/**
  * Routing
  */
 app.use('/', routes);
