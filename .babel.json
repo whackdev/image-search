@@ -1,0 +1,932 @@
+{
+  "{\"filename\":\"/app/src/app.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.25.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [
+            "app"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "app",
+              "exported": "app"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/app.js",
+      "filenameRelative": "/app/src/app.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "app.js",
+      "sourceFileName": "app.js",
+      "sourceRoot": "/app/src",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "app"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/**\n * Dependencies\n */\nvar express = require('express');\nvar path = require('path');\nvar routes = require('./routes/index');\n\n/**\n * Database\n */\nvar db = require('./database/db');\n\n// export app\nvar app = exports.app = express();\n\n/**\n * Routing\n */\napp.use('/', routes);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyJdLCJuYW1lcyI6WyJleHByZXNzIiwicmVxdWlyZSIsInBhdGgiLCJyb3V0ZXMiLCJkYiIsImFwcCIsInVzZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQTs7O0FBR0EsSUFBTUEsVUFBVUMsUUFBUSxTQUFSLENBQWhCO0FBQ0EsSUFBTUMsT0FBT0QsUUFBUSxNQUFSLENBQWI7QUFDQSxJQUFNRSxTQUFTRixRQUFRLGdCQUFSLENBQWY7O0FBRUE7OztBQUdBLElBQU1HLEtBQUtILFFBQVEsZUFBUixDQUFYOztBQUVBO0FBQ08sSUFBTUksb0JBQU1MLFNBQVo7O0FBRVA7OztBQUdBSyxJQUFJQyxHQUFKLENBQVEsR0FBUixFQUFhSCxNQUFiIiwiZmlsZSI6ImFwcC5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL3NyYyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogRGVwZW5kZW5jaWVzXG4gKi9cbmNvbnN0IGV4cHJlc3MgPSByZXF1aXJlKCdleHByZXNzJyk7XG5jb25zdCBwYXRoID0gcmVxdWlyZSgncGF0aCcpO1xuY29uc3Qgcm91dGVzID0gcmVxdWlyZSgnLi9yb3V0ZXMvaW5kZXgnKTtcblxuLyoqXG4gKiBEYXRhYmFzZVxuICovXG5jb25zdCBkYiA9IHJlcXVpcmUoJy4vZGF0YWJhc2UvZGInKTtcblxuLy8gZXhwb3J0IGFwcFxuZXhwb3J0IGNvbnN0IGFwcCA9IGV4cHJlc3MoKTtcblxuLyoqXG4gKiBSb3V0aW5nXG4gKi9cbmFwcC51c2UoJy8nLCByb3V0ZXMpOyJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "app.js"
+      ],
+      "names": [
+        "express",
+        "require",
+        "path",
+        "routes",
+        "db",
+        "app",
+        "use"
+      ],
+      "mappings": ";;;;;AAAA;;;AAGA,IAAMA,UAAUC,QAAQ,SAAR,CAAhB;AACA,IAAMC,OAAOD,QAAQ,MAAR,CAAb;AACA,IAAME,SAASF,QAAQ,gBAAR,CAAf;;AAEA;;;AAGA,IAAMG,KAAKH,QAAQ,eAAR,CAAX;;AAEA;AACO,IAAMI,oBAAML,SAAZ;;AAEP;;;AAGAK,IAAIC,GAAJ,CAAQ,GAAR,EAAaH,MAAb",
+      "file": "app.js",
+      "sourceRoot": "/app/src",
+      "sourcesContent": [
+        "/**\n * Dependencies\n */\nconst express = require('express');\nconst path = require('path');\nconst routes = require('./routes/index');\n\n/**\n * Database\n */\nconst db = require('./database/db');\n\n// export app\nexport const app = express();\n\n/**\n * Routing\n */\napp.use('/', routes);"
+      ]
+    },
+    "mtime": 1501815487964
+  },
+  "{\"filename\":\"/app/src/routes/index.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src/routes\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.25.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/routes/index.js",
+      "filenameRelative": "/app/src/routes/index.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "index.js",
+      "sourceFileName": "index.js",
+      "sourceRoot": "/app/src/routes",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src/routes",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "index"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar express = require('express');\nvar router = express.Router();\n\nvar QueryHistory = require('../models/query-history');\nvar cseAPI = require('../services/api');\n\nrouter.get('/', function (req, res) {\n\n\tres.render('index', function (err, html) {\n\t\tif (err) throw err;\n\n\t\tres.send(html);\n\t});\n});\n\nrouter.get('/latest', function (req, res) {\n\n\tQueryHistory.find({}, 'term when -_id').sort('-when').limit(10).then(function (results) {\n\t\tres.status(200).json(results);\n\t});\n});\n\nrouter.get('/search/:query', function (req, res) {\n\n\tcseAPI.getImages(req.params.query, req.params.offset).then(function (ans) {\n\t\tnew QueryHistory({ term: req.params.query }).save();\n\n\t\tres.status(200).json(ans);\n\t});\n});\n\nmodule.exports = router;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbImV4cHJlc3MiLCJyZXF1aXJlIiwicm91dGVyIiwiUm91dGVyIiwiUXVlcnlIaXN0b3J5IiwiY3NlQVBJIiwiZ2V0IiwicmVxIiwicmVzIiwicmVuZGVyIiwiZXJyIiwiaHRtbCIsInNlbmQiLCJmaW5kIiwic29ydCIsImxpbWl0IiwidGhlbiIsInN0YXR1cyIsImpzb24iLCJyZXN1bHRzIiwiZ2V0SW1hZ2VzIiwicGFyYW1zIiwicXVlcnkiLCJvZmZzZXQiLCJ0ZXJtIiwic2F2ZSIsImFucyIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBTUEsVUFBVUMsUUFBUSxTQUFSLENBQWhCO0FBQ0EsSUFBTUMsU0FBU0YsUUFBUUcsTUFBUixFQUFmOztBQUVBLElBQU1DLGVBQWVILFFBQVEseUJBQVIsQ0FBckI7QUFDQSxJQUFNSSxTQUFTSixRQUFRLGlCQUFSLENBQWY7O0FBRUFDLE9BQU9JLEdBQVAsQ0FBVyxHQUFYLEVBQWdCLFVBQUNDLEdBQUQsRUFBTUMsR0FBTixFQUFjOztBQUU3QkEsS0FBSUMsTUFBSixDQUFXLE9BQVgsRUFBb0IsVUFBQ0MsR0FBRCxFQUFNQyxJQUFOLEVBQWM7QUFDakMsTUFBSUQsR0FBSixFQUFTLE1BQU1BLEdBQU47O0FBRVRGLE1BQUlJLElBQUosQ0FBU0QsSUFBVDtBQUNBLEVBSkQ7QUFLQSxDQVBEOztBQVNBVCxPQUFPSSxHQUFQLENBQVcsU0FBWCxFQUFzQixVQUFDQyxHQUFELEVBQU1DLEdBQU4sRUFBYzs7QUFFbENKLGNBQWFTLElBQWIsQ0FBbUIsRUFBbkIsRUFBdUIsZ0JBQXZCLEVBQXlDQyxJQUF6QyxDQUE4QyxPQUE5QyxFQUF1REMsS0FBdkQsQ0FBNkQsRUFBN0QsRUFBaUVDLElBQWpFLENBQXNFLG1CQUFXO0FBQy9FUixNQUFJUyxNQUFKLENBQVcsR0FBWCxFQUFnQkMsSUFBaEIsQ0FBcUJDLE9BQXJCO0FBQ0QsRUFGRDtBQUdELENBTEQ7O0FBT0FqQixPQUFPSSxHQUFQLENBQVcsZ0JBQVgsRUFBNkIsVUFBQ0MsR0FBRCxFQUFNQyxHQUFOLEVBQWM7O0FBRTFDSCxRQUFPZSxTQUFQLENBQWlCYixJQUFJYyxNQUFKLENBQVdDLEtBQTVCLEVBQW1DZixJQUFJYyxNQUFKLENBQVdFLE1BQTlDLEVBQ0VQLElBREYsQ0FDTyxlQUFPO0FBQ2IsTUFBSVosWUFBSixDQUFpQixFQUFFb0IsTUFBTWpCLElBQUljLE1BQUosQ0FBV0MsS0FBbkIsRUFBakIsRUFBNkNHLElBQTdDOztBQUVBakIsTUFBSVMsTUFBSixDQUFXLEdBQVgsRUFBZ0JDLElBQWhCLENBQXFCUSxHQUFyQjtBQUNDLEVBTEY7QUFNQSxDQVJEOztBQVVBQyxPQUFPQyxPQUFQLEdBQWlCMUIsTUFBakIiLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiL2FwcC9zcmMvcm91dGVzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgZXhwcmVzcyA9IHJlcXVpcmUoJ2V4cHJlc3MnKTtcbmNvbnN0IHJvdXRlciA9IGV4cHJlc3MuUm91dGVyKCk7XG5cbmNvbnN0IFF1ZXJ5SGlzdG9yeSA9IHJlcXVpcmUoJy4uL21vZGVscy9xdWVyeS1oaXN0b3J5Jyk7XG5jb25zdCBjc2VBUEkgPSByZXF1aXJlKCcuLi9zZXJ2aWNlcy9hcGknKTtcblxucm91dGVyLmdldCgnLycsIChyZXEsIHJlcykgPT4ge1xuXG5cdHJlcy5yZW5kZXIoJ2luZGV4JywgKGVyciwgaHRtbCkgPT57XG5cdFx0aWYgKGVycikgdGhyb3cgZXJyO1xuXG5cdFx0cmVzLnNlbmQoaHRtbCk7XG5cdH0pO1xufSk7XG5cbnJvdXRlci5nZXQoJy9sYXRlc3QnLCAocmVxLCByZXMpID0+IHtcblxuIFx0UXVlcnlIaXN0b3J5LmZpbmQoIHt9LCAndGVybSB3aGVuIC1faWQnKS5zb3J0KCctd2hlbicpLmxpbWl0KDEwKS50aGVuKHJlc3VsdHMgPT4ge1xuICAgXHRyZXMuc3RhdHVzKDIwMCkuanNvbihyZXN1bHRzKTtcbiBcdH0pO1xufSk7XG5cbnJvdXRlci5nZXQoJy9zZWFyY2gvOnF1ZXJ5JywgKHJlcSwgcmVzKSA9PiB7XG5cblx0Y3NlQVBJLmdldEltYWdlcyhyZXEucGFyYW1zLnF1ZXJ5LCByZXEucGFyYW1zLm9mZnNldClcblx0XHQudGhlbihhbnMgPT4ge1xuXHRcdG5ldyBRdWVyeUhpc3RvcnkoeyB0ZXJtOiByZXEucGFyYW1zLnF1ZXJ5IH0pLnNhdmUoKTtcblx0XHRcdFxuXHRcdHJlcy5zdGF0dXMoMjAwKS5qc29uKGFucyk7XG5cdFx0fSk7XG59KTtcblxubW9kdWxlLmV4cG9ydHMgPSByb3V0ZXI7Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "index.js"
+      ],
+      "names": [
+        "express",
+        "require",
+        "router",
+        "Router",
+        "QueryHistory",
+        "cseAPI",
+        "get",
+        "req",
+        "res",
+        "render",
+        "err",
+        "html",
+        "send",
+        "find",
+        "sort",
+        "limit",
+        "then",
+        "status",
+        "json",
+        "results",
+        "getImages",
+        "params",
+        "query",
+        "offset",
+        "term",
+        "save",
+        "ans",
+        "module",
+        "exports"
+      ],
+      "mappings": ";;AAAA,IAAMA,UAAUC,QAAQ,SAAR,CAAhB;AACA,IAAMC,SAASF,QAAQG,MAAR,EAAf;;AAEA,IAAMC,eAAeH,QAAQ,yBAAR,CAArB;AACA,IAAMI,SAASJ,QAAQ,iBAAR,CAAf;;AAEAC,OAAOI,GAAP,CAAW,GAAX,EAAgB,UAACC,GAAD,EAAMC,GAAN,EAAc;;AAE7BA,KAAIC,MAAJ,CAAW,OAAX,EAAoB,UAACC,GAAD,EAAMC,IAAN,EAAc;AACjC,MAAID,GAAJ,EAAS,MAAMA,GAAN;;AAETF,MAAII,IAAJ,CAASD,IAAT;AACA,EAJD;AAKA,CAPD;;AASAT,OAAOI,GAAP,CAAW,SAAX,EAAsB,UAACC,GAAD,EAAMC,GAAN,EAAc;;AAElCJ,cAAaS,IAAb,CAAmB,EAAnB,EAAuB,gBAAvB,EAAyCC,IAAzC,CAA8C,OAA9C,EAAuDC,KAAvD,CAA6D,EAA7D,EAAiEC,IAAjE,CAAsE,mBAAW;AAC/ER,MAAIS,MAAJ,CAAW,GAAX,EAAgBC,IAAhB,CAAqBC,OAArB;AACD,EAFD;AAGD,CALD;;AAOAjB,OAAOI,GAAP,CAAW,gBAAX,EAA6B,UAACC,GAAD,EAAMC,GAAN,EAAc;;AAE1CH,QAAOe,SAAP,CAAiBb,IAAIc,MAAJ,CAAWC,KAA5B,EAAmCf,IAAIc,MAAJ,CAAWE,MAA9C,EACEP,IADF,CACO,eAAO;AACb,MAAIZ,YAAJ,CAAiB,EAAEoB,MAAMjB,IAAIc,MAAJ,CAAWC,KAAnB,EAAjB,EAA6CG,IAA7C;;AAEAjB,MAAIS,MAAJ,CAAW,GAAX,EAAgBC,IAAhB,CAAqBQ,GAArB;AACC,EALF;AAMA,CARD;;AAUAC,OAAOC,OAAP,GAAiB1B,MAAjB",
+      "file": "index.js",
+      "sourceRoot": "/app/src/routes",
+      "sourcesContent": [
+        "const express = require('express');\nconst router = express.Router();\n\nconst QueryHistory = require('../models/query-history');\nconst cseAPI = require('../services/api');\n\nrouter.get('/', (req, res) => {\n\n\tres.render('index', (err, html) =>{\n\t\tif (err) throw err;\n\n\t\tres.send(html);\n\t});\n});\n\nrouter.get('/latest', (req, res) => {\n\n \tQueryHistory.find( {}, 'term when -_id').sort('-when').limit(10).then(results => {\n   \tres.status(200).json(results);\n \t});\n});\n\nrouter.get('/search/:query', (req, res) => {\n\n\tcseAPI.getImages(req.params.query, req.params.offset)\n\t\t.then(ans => {\n\t\tnew QueryHistory({ term: req.params.query }).save();\n\t\t\t\n\t\tres.status(200).json(ans);\n\t\t});\n});\n\nmodule.exports = router;"
+      ]
+    },
+    "mtime": 1501814133150
+  },
+  "{\"filename\":\"/app/src/models/query-history.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src/models\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.25.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/models/query-history.js",
+      "filenameRelative": "/app/src/models/query-history.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "query-history.js",
+      "sourceFileName": "query-history.js",
+      "sourceRoot": "/app/src/models",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src/models",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "query-history"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar mongoose = require('mongoose');\n\nvar queryHistorySchema = new mongoose.Schema({\n\tterm: String,\n\twhen: { type: Date, default: Date.now }\n});\n\nvar QueryHistory = mongoose.model('QueryHistory', queryHistorySchema);\n\nmodule.exports = QueryHistory;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInF1ZXJ5LWhpc3RvcnkuanMiXSwibmFtZXMiOlsibW9uZ29vc2UiLCJyZXF1aXJlIiwicXVlcnlIaXN0b3J5U2NoZW1hIiwiU2NoZW1hIiwidGVybSIsIlN0cmluZyIsIndoZW4iLCJ0eXBlIiwiRGF0ZSIsImRlZmF1bHQiLCJub3ciLCJRdWVyeUhpc3RvcnkiLCJtb2RlbCIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBTUEsV0FBV0MsUUFBUSxVQUFSLENBQWpCOztBQUVBLElBQU1DLHFCQUFxQixJQUFJRixTQUFTRyxNQUFiLENBQW9CO0FBQzlDQyxPQUFNQyxNQUR3QztBQUU5Q0MsT0FBTSxFQUFFQyxNQUFNQyxJQUFSLEVBQWNDLFNBQVNELEtBQUtFLEdBQTVCO0FBRndDLENBQXBCLENBQTNCOztBQUtBLElBQU1DLGVBQWVYLFNBQVNZLEtBQVQsQ0FBZSxjQUFmLEVBQStCVixrQkFBL0IsQ0FBckI7O0FBRUFXLE9BQU9DLE9BQVAsR0FBaUJILFlBQWpCIiwiZmlsZSI6InF1ZXJ5LWhpc3RvcnkuanMiLCJzb3VyY2VSb290IjoiL2FwcC9zcmMvbW9kZWxzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgbW9uZ29vc2UgPSByZXF1aXJlKCdtb25nb29zZScpO1xuXG5jb25zdCBxdWVyeUhpc3RvcnlTY2hlbWEgPSBuZXcgbW9uZ29vc2UuU2NoZW1hKHtcblx0dGVybTogU3RyaW5nLFxuXHR3aGVuOiB7IHR5cGU6IERhdGUsIGRlZmF1bHQ6IERhdGUubm93IH1cbn0pO1xuXG5jb25zdCBRdWVyeUhpc3RvcnkgPSBtb25nb29zZS5tb2RlbCgnUXVlcnlIaXN0b3J5JywgcXVlcnlIaXN0b3J5U2NoZW1hKTtcblxubW9kdWxlLmV4cG9ydHMgPSBRdWVyeUhpc3Rvcnk7Il19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "query-history.js"
+      ],
+      "names": [
+        "mongoose",
+        "require",
+        "queryHistorySchema",
+        "Schema",
+        "term",
+        "String",
+        "when",
+        "type",
+        "Date",
+        "default",
+        "now",
+        "QueryHistory",
+        "model",
+        "module",
+        "exports"
+      ],
+      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;;AAEA,IAAMC,qBAAqB,IAAIF,SAASG,MAAb,CAAoB;AAC9CC,OAAMC,MADwC;AAE9CC,OAAM,EAAEC,MAAMC,IAAR,EAAcC,SAASD,KAAKE,GAA5B;AAFwC,CAApB,CAA3B;;AAKA,IAAMC,eAAeX,SAASY,KAAT,CAAe,cAAf,EAA+BV,kBAA/B,CAArB;;AAEAW,OAAOC,OAAP,GAAiBH,YAAjB",
+      "file": "query-history.js",
+      "sourceRoot": "/app/src/models",
+      "sourcesContent": [
+        "const mongoose = require('mongoose');\n\nconst queryHistorySchema = new mongoose.Schema({\n\tterm: String,\n\twhen: { type: Date, default: Date.now }\n});\n\nconst QueryHistory = mongoose.model('QueryHistory', queryHistorySchema);\n\nmodule.exports = QueryHistory;"
+      ]
+    },
+    "mtime": 1501814133142
+  },
+  "{\"filename\":\"/app/src/services/api.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src/services\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.25.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/services/api.js",
+      "filenameRelative": "/app/src/services/api.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "api.js",
+      "sourceFileName": "api.js",
+      "sourceRoot": "/app/src/services",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src/services",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "api"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar request = require('request');\n\nexports.getImages = function (search) {\n  var page = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;\n\n\n  return new Promise(function (resolve, reject) {\n\n    var api = {\n      url: process.env.URL + '/' + page + '?q=' + search,\n      headers: { Authorization: 'Client-ID ' + process.env.CLIENT_ID },\n      json: true\n    };\n\n    function processImages(err, response, body) {\n      if (!err && response.statusCode == 200) {\n        body = body.data.filter(function (image) {\n          if (!image.is_album) {\n            return image;\n          }\n        }).map(function (image) {\n          return {\n            url: image.link,\n            snippet: image.title,\n            context: 'https://imgur.com/' + image.id\n          };\n        });\n        resolve(body);\n      }\n    }\n    request(api, processImages);\n  });\n};\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwaS5qcyJdLCJuYW1lcyI6WyJyZXF1ZXN0IiwicmVxdWlyZSIsImV4cG9ydHMiLCJnZXRJbWFnZXMiLCJzZWFyY2giLCJwYWdlIiwiUHJvbWlzZSIsInJlc29sdmUiLCJyZWplY3QiLCJhcGkiLCJ1cmwiLCJwcm9jZXNzIiwiZW52IiwiVVJMIiwiaGVhZGVycyIsIkF1dGhvcml6YXRpb24iLCJDTElFTlRfSUQiLCJqc29uIiwicHJvY2Vzc0ltYWdlcyIsImVyciIsInJlc3BvbnNlIiwiYm9keSIsInN0YXR1c0NvZGUiLCJkYXRhIiwiZmlsdGVyIiwiaW1hZ2UiLCJpc19hbGJ1bSIsIm1hcCIsImxpbmsiLCJzbmlwcGV0IiwidGl0bGUiLCJjb250ZXh0IiwiaWQiXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBTUEsVUFBVUMsUUFBUSxTQUFSLENBQWhCOztBQUVBQyxRQUFRQyxTQUFSLEdBQW9CLFVBQVNDLE1BQVQsRUFBMkI7QUFBQSxNQUFWQyxJQUFVLHVFQUFILENBQUc7OztBQUU3QyxTQUFPLElBQUlDLE9BQUosQ0FBWSxVQUFDQyxPQUFELEVBQVVDLE1BQVYsRUFBcUI7O0FBRXRDLFFBQUlDLE1BQU07QUFDUkMsV0FBUUMsUUFBUUMsR0FBUixDQUFZQyxHQUFwQixTQUEyQlIsSUFBM0IsV0FBcUNELE1BRDdCO0FBRVJVLGVBQVMsRUFBRUMsOEJBQTRCSixRQUFRQyxHQUFSLENBQVlJLFNBQTFDLEVBRkQ7QUFHUkMsWUFBTTtBQUhFLEtBQVY7O0FBTUEsYUFBU0MsYUFBVCxDQUF1QkMsR0FBdkIsRUFBNEJDLFFBQTVCLEVBQXNDQyxJQUF0QyxFQUE0QztBQUMxQyxVQUFJLENBQUNGLEdBQUQsSUFBUUMsU0FBU0UsVUFBVCxJQUF1QixHQUFuQyxFQUF3QztBQUN0Q0QsZUFBT0EsS0FBS0UsSUFBTCxDQUFVQyxNQUFWLENBQWlCLGlCQUFTO0FBQy9CLGNBQUksQ0FBQ0MsTUFBTUMsUUFBWCxFQUFxQjtBQUNuQixtQkFBT0QsS0FBUDtBQUNEO0FBQ0YsU0FKTSxFQUlKRSxHQUpJLENBSUEsaUJBQVM7QUFDZCxpQkFBTztBQUNMakIsaUJBQUtlLE1BQU1HLElBRE47QUFFTEMscUJBQVNKLE1BQU1LLEtBRlY7QUFHTEMsNENBQThCTixNQUFNTztBQUgvQixXQUFQO0FBS0QsU0FWTSxDQUFQO0FBV0F6QixnQkFBUWMsSUFBUjtBQUNEO0FBQ0Y7QUFDRHJCLFlBQVFTLEdBQVIsRUFBYVMsYUFBYjtBQUNELEdBekJNLENBQVA7QUEwQkQsQ0E1QkQiLCJmaWxlIjoiYXBpLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvc3JjL3NlcnZpY2VzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgcmVxdWVzdCA9IHJlcXVpcmUoJ3JlcXVlc3QnKTtcblxuZXhwb3J0cy5nZXRJbWFnZXMgPSBmdW5jdGlvbihzZWFyY2gsIHBhZ2UgPSAxKSB7XG5cbiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcblxuICAgIGxldCBhcGkgPSB7XG4gICAgICB1cmw6IGAke3Byb2Nlc3MuZW52LlVSTH0vJHtwYWdlfT9xPSR7c2VhcmNofWAsXG4gICAgICBoZWFkZXJzOiB7IEF1dGhvcml6YXRpb246IGBDbGllbnQtSUQgJHtwcm9jZXNzLmVudi5DTElFTlRfSUR9YCB9LFxuICAgICAganNvbjogdHJ1ZSxcblx0XHR9O1xuXHRcdFxuICAgIGZ1bmN0aW9uIHByb2Nlc3NJbWFnZXMoZXJyLCByZXNwb25zZSwgYm9keSkge1xuICAgICAgaWYgKCFlcnIgJiYgcmVzcG9uc2Uuc3RhdHVzQ29kZSA9PSAyMDApIHtcbiAgICAgICAgYm9keSA9IGJvZHkuZGF0YS5maWx0ZXIoaW1hZ2UgPT4ge1xuICAgICAgICAgIGlmICghaW1hZ2UuaXNfYWxidW0pIHtcbiAgICAgICAgICAgIHJldHVybiBpbWFnZTtcbiAgICAgICAgICB9XG4gICAgICAgIH0pLm1hcChpbWFnZSA9PiB7XG4gICAgICAgICAgcmV0dXJuIHtcbiAgICAgICAgICAgIHVybDogaW1hZ2UubGluayxcbiAgICAgICAgICAgIHNuaXBwZXQ6IGltYWdlLnRpdGxlLFxuICAgICAgICAgICAgY29udGV4dDogYGh0dHBzOi8vaW1ndXIuY29tLyR7aW1hZ2UuaWR9YFxuICAgICAgICAgIH07XG4gICAgICAgIH0pO1xuICAgICAgICByZXNvbHZlKGJvZHkpXG4gICAgICB9XG4gICAgfVxuICAgIHJlcXVlc3QoYXBpLCBwcm9jZXNzSW1hZ2VzKTtcbiAgfSk7XG59O1xuXG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "api.js"
+      ],
+      "names": [
+        "request",
+        "require",
+        "exports",
+        "getImages",
+        "search",
+        "page",
+        "Promise",
+        "resolve",
+        "reject",
+        "api",
+        "url",
+        "process",
+        "env",
+        "URL",
+        "headers",
+        "Authorization",
+        "CLIENT_ID",
+        "json",
+        "processImages",
+        "err",
+        "response",
+        "body",
+        "statusCode",
+        "data",
+        "filter",
+        "image",
+        "is_album",
+        "map",
+        "link",
+        "snippet",
+        "title",
+        "context",
+        "id"
+      ],
+      "mappings": ";;AAAA,IAAMA,UAAUC,QAAQ,SAAR,CAAhB;;AAEAC,QAAQC,SAAR,GAAoB,UAASC,MAAT,EAA2B;AAAA,MAAVC,IAAU,uEAAH,CAAG;;;AAE7C,SAAO,IAAIC,OAAJ,CAAY,UAACC,OAAD,EAAUC,MAAV,EAAqB;;AAEtC,QAAIC,MAAM;AACRC,WAAQC,QAAQC,GAAR,CAAYC,GAApB,SAA2BR,IAA3B,WAAqCD,MAD7B;AAERU,eAAS,EAAEC,8BAA4BJ,QAAQC,GAAR,CAAYI,SAA1C,EAFD;AAGRC,YAAM;AAHE,KAAV;;AAMA,aAASC,aAAT,CAAuBC,GAAvB,EAA4BC,QAA5B,EAAsCC,IAAtC,EAA4C;AAC1C,UAAI,CAACF,GAAD,IAAQC,SAASE,UAAT,IAAuB,GAAnC,EAAwC;AACtCD,eAAOA,KAAKE,IAAL,CAAUC,MAAV,CAAiB,iBAAS;AAC/B,cAAI,CAACC,MAAMC,QAAX,EAAqB;AACnB,mBAAOD,KAAP;AACD;AACF,SAJM,EAIJE,GAJI,CAIA,iBAAS;AACd,iBAAO;AACLjB,iBAAKe,MAAMG,IADN;AAELC,qBAASJ,MAAMK,KAFV;AAGLC,4CAA8BN,MAAMO;AAH/B,WAAP;AAKD,SAVM,CAAP;AAWAzB,gBAAQc,IAAR;AACD;AACF;AACDrB,YAAQS,GAAR,EAAaS,aAAb;AACD,GAzBM,CAAP;AA0BD,CA5BD",
+      "file": "api.js",
+      "sourceRoot": "/app/src/services",
+      "sourcesContent": [
+        "const request = require('request');\n\nexports.getImages = function(search, page = 1) {\n\n  return new Promise((resolve, reject) => {\n\n    let api = {\n      url: `${process.env.URL}/${page}?q=${search}`,\n      headers: { Authorization: `Client-ID ${process.env.CLIENT_ID}` },\n      json: true,\n\t\t};\n\t\t\n    function processImages(err, response, body) {\n      if (!err && response.statusCode == 200) {\n        body = body.data.filter(image => {\n          if (!image.is_album) {\n            return image;\n          }\n        }).map(image => {\n          return {\n            url: image.link,\n            snippet: image.title,\n            context: `https://imgur.com/${image.id}`\n          };\n        });\n        resolve(body)\n      }\n    }\n    request(api, processImages);\n  });\n};\n\n"
+      ]
+    },
+    "mtime": 1501814133154
+  },
+  "{\"filename\":\"/app/src/database/db.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src/database\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.25.0": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/database/db.js",
+      "filenameRelative": "/app/src/database/db.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "db.js",
+      "sourceFileName": "db.js",
+      "sourceRoot": "/app/src/database",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src/database",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "db"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar mongoose = require('mongoose');\nmongoose.Promise = global.Promise;\n\nvar mongo = process.env.DB_HOST + '/' + process.env.DB_NAME;\n\nexports.db = mongoose.connect(mongo, { useMongoClient: true });\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRiLmpzIl0sIm5hbWVzIjpbIm1vbmdvb3NlIiwicmVxdWlyZSIsIlByb21pc2UiLCJnbG9iYWwiLCJtb25nbyIsInByb2Nlc3MiLCJlbnYiLCJEQl9IT1NUIiwiREJfTkFNRSIsImV4cG9ydHMiLCJkYiIsImNvbm5lY3QiLCJ1c2VNb25nb0NsaWVudCJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFNQSxXQUFXQyxRQUFRLFVBQVIsQ0FBakI7QUFDQUQsU0FBU0UsT0FBVCxHQUFtQkMsT0FBT0QsT0FBMUI7O0FBRUEsSUFBTUUsUUFBV0MsUUFBUUMsR0FBUixDQUFZQyxPQUF2QixTQUFrQ0YsUUFBUUMsR0FBUixDQUFZRSxPQUFwRDs7QUFFQUMsUUFBUUMsRUFBUixHQUFhVixTQUFTVyxPQUFULENBQWlCUCxLQUFqQixFQUF3QixFQUFFUSxnQkFBZ0IsSUFBbEIsRUFBeEIsQ0FBYiIsImZpbGUiOiJkYi5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL3NyYy9kYXRhYmFzZSIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IG1vbmdvb3NlID0gcmVxdWlyZSgnbW9uZ29vc2UnKTtcbm1vbmdvb3NlLlByb21pc2UgPSBnbG9iYWwuUHJvbWlzZTtcblxuY29uc3QgbW9uZ28gPSBgJHtwcm9jZXNzLmVudi5EQl9IT1NUfS8ke3Byb2Nlc3MuZW52LkRCX05BTUV9YFxuXG5leHBvcnRzLmRiID0gbW9uZ29vc2UuY29ubmVjdChtb25nbywgeyB1c2VNb25nb0NsaWVudDogdHJ1ZSB9KTtcbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "db.js"
+      ],
+      "names": [
+        "mongoose",
+        "require",
+        "Promise",
+        "global",
+        "mongo",
+        "process",
+        "env",
+        "DB_HOST",
+        "DB_NAME",
+        "exports",
+        "db",
+        "connect",
+        "useMongoClient"
+      ],
+      "mappings": ";;AAAA,IAAMA,WAAWC,QAAQ,UAAR,CAAjB;AACAD,SAASE,OAAT,GAAmBC,OAAOD,OAA1B;;AAEA,IAAME,QAAWC,QAAQC,GAAR,CAAYC,OAAvB,SAAkCF,QAAQC,GAAR,CAAYE,OAApD;;AAEAC,QAAQC,EAAR,GAAaV,SAASW,OAAT,CAAiBP,KAAjB,EAAwB,EAAEQ,gBAAgB,IAAlB,EAAxB,CAAb",
+      "file": "db.js",
+      "sourceRoot": "/app/src/database",
+      "sourcesContent": [
+        "const mongoose = require('mongoose');\nmongoose.Promise = global.Promise;\n\nconst mongo = `${process.env.DB_HOST}/${process.env.DB_NAME}`\n\nexports.db = mongoose.connect(mongo, { useMongoClient: true });\n"
+      ]
+    },
+    "mtime": 1501814133138
+  }
+}
